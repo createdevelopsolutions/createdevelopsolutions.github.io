@@ -168,6 +168,12 @@ textarea {
   border: solid 1px #fff;
   margin-right: 18px;
   margin-top: 7px;
+  background-image: url(../img/menu-white.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 35px;
 }
 
 .navbar-toggle,
@@ -182,9 +188,11 @@ textarea {
   text-decoration: none;
 }
 
-.navbar-toggle:hover {
-  background: #fff;
+.navbar-toggle:hover,
+.navbar-toggle.active {
+  background-color: #fff;
   color: #000;
+  background-image: url(../img/menu.png);
 }
 
 #top-menu {
@@ -455,6 +463,10 @@ textarea {
   .navbar-no-mobile {
     display: block;
     width: 100%;
+  }
+  .navbar-no-mobile.active {
+    background: #fff;
+    border-bottom: solid 3px #673AB7;
   }
   .navbar-toggle {
     display: inline-block;

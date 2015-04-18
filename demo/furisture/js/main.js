@@ -170,6 +170,7 @@ $(document).ready(function () {
   $('#sofa-texture-picker li').click(function () {
     $('#sofa-texture-picker li').removeClass('active');
     $(this).addClass('active');
+
     setTexture('textures/' + $(this).attr('select'));
   });
 
@@ -181,7 +182,6 @@ $(document).ready(function () {
   $('.navbar-toggle').click(function () {
     $('#sofa-info').toggleClass('active');
     $(this).toggleClass('active');
-    $(this).toggleClass('glyphicon-menu-right');
-    $(this).toggleClass('glyphicon-menu-left');
+    $('.navbar-no-mobile').toggleClass('active');
   });
 });
